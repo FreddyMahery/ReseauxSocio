@@ -1,0 +1,92 @@
+/* style.css */
+
+/* Remise à zéro des marges et des paddings */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ajout pour éviter les débordements */
+}
+
+/* Conteneur principal centré verticalement et horizontalement */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6f7e6; /* Vert très clair pour le fond */
+}
+
+/* Boîte contenant les éléments */
+.contenue {
+  border: solid 2px #4caf50; /* Bordure verte foncée */
+  border-radius: 8px;
+  padding: 20px;
+  width: 25%;
+  background-color: #f1f8f1; /* Fond léger */
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.3); /* Ombre pour un effet de profondeur */
+}
+
+/* Style de la section logo centrée */
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Boutons de la classe 'boutton' */
+.boutton > button {
+  width: 100%;
+  height: 42px;
+  background-color: #4caf50; /* Vert principal */
+  color: white;
+  border-radius: 8px;
+  border: solid 2px #4caf50; /* Bordure en accord avec le fond */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition au survol */
+}
+
+.boutton > button:hover {
+  background-color: #45a049; /* Fond plus foncé au survol */
+}
+
+/* Bouton avec style bleu pour 'compt' */
+.compt > button {
+  width: 60%;
+  height: 45px;
+  background-color: blue; /* Fond bleu */
+  color: white;
+  border-radius: 8px;
+  border: solid 2px #4caf50; /* Bordure verte pour correspondre au thème */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.compt > button:hover {
+  background-color: #0000cc; /* Bleu plus foncé au survol */
+}
+
+/* Champs d'entrée dans le formulaire */
+.contenue > form > input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: solid 2px #4caf50; /* Bordure verte */
+  padding-left: 10px; /* Pour un peu d'espace à gauche */
+  margin-bottom: 15px; /* Espacement entre les champs */
+}
+
+/* Section lien centrée */
+.lien {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* Section 'compt' centrée */
+.compt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}

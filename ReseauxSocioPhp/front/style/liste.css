@@ -1,0 +1,63 @@
+/* style.css */
+
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7e6; /* Vert clair pour le fond */
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #2d662d; /* Vert foncé pour le titre */
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.1); /* Légère ombre verte */
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #5cb85c; /* Bordure verte */
+}
+
+table th {
+    background-color: #5cb85c; /* Vert pour l'en-tête */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #d0e9d0; /* Alternance des lignes */
+}
+
+table tr:hover {
+    background-color: #b3ddb3; /* Survol des lignes */
+}
+
+button {
+    display: block;
+    background-color: #5cb85c; /* Vert pour les boutons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 128, 0, 0.3);
+}
+
+button:hover {
+    background-color: #4cae4c; /* Changement de couleur au survol */
+}
+
+form {
+    text-align: center;
+}

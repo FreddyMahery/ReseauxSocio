@@ -1,0 +1,63 @@
+/* style.css */
+
+/* Remise à zéro des marges et des paddings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Pour éviter les débordements de marges/paddings */
+  }
+  
+  /* Centrage du contenu principal */
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6f7e6; /* Vert très clair pour l'arrière-plan */
+  }
+  
+  /* Style de la boîte contenant le contenu */
+  .contenue {
+    border: solid 2px #4caf50; /* Bordure verte foncée */
+    border-radius: 8px;
+    padding: 20px;
+    width: 25%;
+    background-color: #f1f8f1; /* Légère nuance de vert pour le fond */
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2); /* Ombre légère pour l'effet de profondeur */
+  }
+  
+  /* Style de l'élément logo centré */
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style des boutons et des champs d'entrée */
+  button,
+  .input {
+    width: 60%;
+    height: 35px;
+    color: white;
+    background-color: #4caf50; /* Vert principal pour les boutons et les champs */
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Effet de transition au survol */
+  }
+  
+  button:hover,
+  .input:hover {
+    background-color: #45a049; /* Vert un peu plus foncé au survol */
+  }
+  
+  /* Style pour le conteneur des champs et boutons */
+  .contentInput,
+  .connect {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Espace entre les champs */
+  }
+  

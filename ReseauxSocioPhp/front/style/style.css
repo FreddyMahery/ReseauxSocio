@@ -1,0 +1,238 @@
+/* pametre default */
+* {
+  margin: 0;
+  padding: 0;
+}
+h2{
+  color: white;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.entete {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+  background-color: rgb(45, 158, 45);
+  height: 50px;
+  align-items: center;
+}
+/* partition on 1/3 et 2/3 */
+.corps {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.aproposCompte {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contenuepublication {
+  flex: 2;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+/* ================================================================ */
+
+.Ajoutpub {
+  display: flex;
+  border-radius: 10px;
+  border: solid 2px royalblue;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.Ajoutpub > form {
+  width: 100%;
+  /* border: solid 2px rgb(26, 95, 9); */
+}
+
+#publication {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+.Ajoutpub > form > .option {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
+
+.option > button {
+  width: 100%;
+  background-color: rgb(45, 158, 45);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  size: 50px;
+  height: 40px;
+}
+
+/* boutton de deconnecxion */
+.deconnecxion > form >button  {
+  border: none;
+  background-color: rgb(45, 158, 45);
+  color: white;
+  size: 20px;
+  width: 100%;
+  height: 40px;
+
+}
+
+
+
+/* le contenue de la publication */
+.profil > img {
+  height: 90px;
+}
+
+.headerPub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerPub > .image {
+  display: flex;
+  align-items: center;
+}
+
+.headerPub > .image > img {
+  width: 40px;
+}
+
+.headerPub > .image > p {
+  padding-right: 10px;
+}
+
+/* apropos de la reaction */
+.reactionpub {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* pour  conteneur de la publication  */
+#lesPublications {
+  border: solid 2px rgb(26, 95, 9);
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 450px; /* Hauteur maximale */
+  overflow-y: auto; /* Barre de défilement verticale uniquement si */
+}
+
+/* pour la publication partiel */
+.publication {
+  border: solid 2px rgb(26, 95, 9);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Réduction des tailles des icônes */
+.optionpublication > button > img,
+.reaction > button > .like > img,
+.reaction > button > .dislike > img,
+.reaction > button > .Haha > img,
+.reaction > button > .love > img,
+.commentaire > img,
+.modifCompte > form > button > img,
+.suppCompte > form > button > img,
+.listeCompte > form > button > img
+{
+  width: 25px;
+  height: 20px;
+}
+
+/* Style pour les boutons de réaction */
+.reaction,
+.commentaire {
+  display: flex;
+  margin: 10px;
+}
+
+.like,
+.dislike,
+.Haha,
+.love,
+.commentaire {
+  display: flex;
+  width: 75px;
+  height: 30px;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px rgb(18, 74, 131);
+  border-radius: 15px;
+}
+
+/* Style des boutons actifs */
+.reaction > button.active {
+  display: flex;
+  width: 75px;
+  height: 30px;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 3px rgb(18, 74, 131);
+  border-radius: 15px;
+}
+
+/* Changer l'image du bouton quand il est actif */
+button.active img {
+  content: url("../../image/reaction/like-svgrepo-ok.svg"); /* Remplacer l'URL de l'image pour les autres boutons aussi */
+}
+
+/* Bouton actif pour chaque réaction spécifique */
+button#dislikeButton.active img {
+  content: url("../../image/reaction/dislike-svgrepo-com.svg");
+}
+
+button#hahaButton.active img {
+  content: url("../../image/reaction/facebook-haha-logo-svgrepo-com.svg");
+}
+
+button#loveButton.active img {
+  content: url("../../image/reaction/love-1488-svgrepo-com.svg");
+}
+
+.reaction > button,
+.reactionpub > button {
+  border: none;
+  margin: 5px;
+}
+
+/* gestion des compte */
+.modifCompte > form > button, 
+.suppCompte > form > button,  
+.listeCompte > form > button{
+  border-radius: 12px;
+  display: flex;
+  width: 100% ;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(45, 158, 45);
+  border: none;
+  color: white;
+  size: 20 px;
+} 
+
+.modifCompte,
+.suppCompte,
+.listeCompte{
+ padding: 10px;
+}
